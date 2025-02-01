@@ -1,7 +1,15 @@
+import BentoGrid from "./components/BentoGrid"
+import Hero from "./components/Hero"
+import ProductCarousel from "./components/ProductCarousel"
+
 function App() {
 
   return (
-    <h1>Hello</h1>
+    <>
+    <Hero/>
+    <BentoGrid/>
+    <ProductCarousel/>
+    </>
   )
 }
 
