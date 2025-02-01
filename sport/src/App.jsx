@@ -26,6 +26,7 @@ function App() {
     <ProductCarousel/>
 
     <div style={{backgroundColor: "#0f0f0f"}}>
+      <Community/>
       <SponsorsSection
       />
       <Footer style={{backgroundColor: "#0f0f0f"}} />
