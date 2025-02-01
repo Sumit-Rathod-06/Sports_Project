@@ -1,7 +1,15 @@
+import Navbar from "./components/Navbar"
+import Bg from "./components/Bg"
+
 function App() {
 
   return (
-    <h1>Hello</h1>
+    <>
+      <div>
+          <Navbar/>
+          <Bg/>
+      </div>
+    </>
   )
 }
 
