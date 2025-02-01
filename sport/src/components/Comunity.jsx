@@ -5,25 +5,15 @@ function Community() {
   const [posts, setPosts] = useState([]);
   const [note, setNote] = useState({
     title: "",
-    content: "",
-    topics: []
+    content: ""
   });
 
   function handleChange(event) {
-    const { name, value, type, checked } = event.target;
-    if (type === "checkbox") {
-      setNote((prevNote) => ({
-        ...prevNote,
-        topics: checked
-          ? [...prevNote.topics, value]
-          : prevNote.topics.filter((topic) => topic !== value)
-      }));
-    } else {
-      setNote((prevNote) => ({
-        ...prevNote,
-        [name]: value
-      }));
-    }
+    const { name, value } = event.target;
+    setNote((prevNote) => ({
+      ...prevNote,
+      [name]: value
+    }));
   }
 
   function submitNote(event) {
@@ -34,28 +24,26 @@ function Community() {
         user_name: "Anonymous", // Modify this based on authentication
         comment_date: new Date().toLocaleDateString(),
         title: note.title,
-        msg: note.content,
-        topics: note.topics
+        msg: note.content
       };
       setPosts((prevPosts) => [newPost, ...prevPosts]);
-      setNote({ title: "", content: "", topics: [] });
+      setNote({ title: "", content: "" });
     }
   }
 
   return (
     <div>
       <div className="community-heading">
-        <h1>Career Community</h1>
+        <h1>Sports Community</h1>
         <p>Connect, share, and grow with fellow professionals</p>
       </div>
       <div className="community-form">
-        <h1>Share your Journey</h1>
+        <h1>Share your Thoughts</h1>
         <form onSubmit={submitNote}>
           <input
             type="text"
             name="title"
             placeholder="Title"
-            id="title-box"
             value={note.title}
             onChange={handleChange}
             required
@@ -68,34 +56,6 @@ function Community() {
             onChange={handleChange}
             required
           />
-          <h3>Select Related Topics</h3>
-          <input
-            type="checkbox"
-            id="topic1"
-            name="topic1"
-            value="Career Advice"
-            checked={note.topics.includes("Career Advice")}
-            onChange={handleChange}
-          />
-          <label htmlFor="topic1">Career Advice</label><br />
-          <input
-            type="checkbox"
-            id="topic2"
-            name="topic2"
-            value="Skill Development"
-            checked={note.topics.includes("Skill Development")}
-            onChange={handleChange}
-          />
-          <label htmlFor="topic2">Skill Development</label><br />
-          <input
-            type="checkbox"
-            id="topic3"
-            name="topic3"
-            value="Tech Industry"
-            checked={note.topics.includes("Tech Industry")}
-            onChange={handleChange}
-          />
-          <label htmlFor="topic3">Tech Industry</label><br />
           <button className="full-width" type="submit">Post</button>
         </form>
       </div>
@@ -112,13 +72,6 @@ function Community() {
           <div className="c1">
             <h2>{post.title}</h2>
             <p style={{ marginRight: "8%" }}>{post.msg}</p>
-          </div>
-          <div className="c1">
-            <ul>
-              {post.topics.map((topic, index) => (
-                <li key={index}>{topic}</li>
-              ))}
-            </ul>
           </div>
         </div>
       ))}
