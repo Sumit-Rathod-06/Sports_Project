@@ -59,6 +59,11 @@
   flex-direction: column;
 }
 
+.card-content:hover{
+  background: linear-gradient(145deg, #303030, #606060);
+  transform : scale(1.05)
+}
+
 .image-container {
   position: relative;
   width: 100%;

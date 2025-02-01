@@ -2,7 +2,7 @@
     display: flex;
     padding-inline: 20px;
     height: 80vh;
-    gap: 10vw;
+    gap: 2vw;
     justify-content: center;
     background-color: #0f0f0f;
     color: #ffd376;
@@ -14,12 +14,12 @@
     height: 100%;
     display: flex;
     align-items: center;
-    width: 20rem;
+    width: 30rem;
   }
   
   .rightPanel {
     display: flex;
     align-items: center;
-    width: 35vw;
+    width: 45vw;
   }
   

@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
     <div class="foo">
-        <div >
+        <div style={{fontSize: "large"}}>
             <h3>SportSphere</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In quis modi non velit tempore, cupiditate rerum. Sed, pariatur aliquam eius
             </p>

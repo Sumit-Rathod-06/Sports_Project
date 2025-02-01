@@ -75,6 +75,7 @@ const ProductCarousel = () => {
 
   return (
     <div className="carousel-container">
+      <h2 style={{fontSize: "xx-large"}}>Our Trending Products</h2>
       <div className="carousel">
         {products.map((product, index) => {
           const position = (index - activeIndex + products.length) % products.length
