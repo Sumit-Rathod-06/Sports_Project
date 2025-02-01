@@ -1,7 +1,7 @@
 .community-heading {
   text-align: center;
   padding: 2rem 0;
-  background: linear-gradient(to right, #1a1f2c, #2c3345);
+  background-color: #0f0f0f;
   color: white;
   margin-bottom: 2rem;
 }
@@ -149,11 +149,4 @@
     width: 100%;
     margin-top: 0.5rem;
   }
-}
-/* Add a dark background to the entire page */
-body {
-  background: linear-gradient(to bottom right, #0f172a, #1e293b);
-  min-height: 100vh;
-  margin: 0;
-  padding: 2rem;
 }
