@@ -4,8 +4,8 @@
     list-style: none;
     font-size: x-large;
     align-items: centre;
-    margin: 3% 3%;
     gap: 5%;
+    padding: 3% 3%;
 }
 
 #logo{
@@ -21,4 +21,8 @@
 
 .navbar a{
     text-decoration: none;
+}
+
+.navbar li{
+    color: #ffff;
 }

@@ -16,14 +16,23 @@ function App() {
 
   return (
     <>
-    {/* <Navbar/>
+
+      <div style={{backgroundColor: "#0f0f0f", margin : "0px" , padding : "0px"}} >
+          <Navbar/>
+          <Bg/>
+      </div>
     <Hero/>
     <BentoGrid/>
     <ProductCarousel/>
-    <SponsorsSection/> */}
-    <Community/>
-    {/* <Bg/>
-    <Footer /> */}
+
+    <div style={{backgroundColor: "#0f0f0f"}}>
+      <Community/>
+      <SponsorsSection
+      />
+      <Footer style={{backgroundColor: "#0f0f0f"}} />
+    </div>
+      
+
     </>
   )
 }

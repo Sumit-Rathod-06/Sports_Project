@@ -93,7 +93,7 @@ const ProductCarousel = () => {
             >
               <div className="card-content">
                 <div className="image-container">
-                  <img src={product.image || "/placeholder.svg"} alt={product.name} />
+                  <img style={{ height: "400px" , width: "320px"}}src={product.image || "/placeholder.svg"} alt={product.name} />
                   <div className="category-tag">{product.category}</div>
                 </div>
                 <div className="product-info">
