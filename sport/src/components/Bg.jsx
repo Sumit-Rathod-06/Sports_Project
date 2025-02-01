@@ -6,7 +6,10 @@ function Bg(){
         <>
             <div className="image-container">
                 <img src={bg} alt="" />
-                <div className="overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quasi quidem consequuntur magnam perspiciatis nisi cumque eos voluptate, maiores repellat est saepe, unde, architecto vitae dolor consequatur hic molestiae provident.</div>
+                <div className="overlay">
+                    <h4>Transforming Sports Through Data & Communication</h4>
+                    <p>Unleashing the power of insights, analysis, and strategy to elevate sports communication and research.</p>
+                </div>
             </div>
         </>
     )
