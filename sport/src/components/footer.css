@@ -1,0 +1,27 @@
+footer{
+    background-color: rgba(2, 15, 54, 0.845); 
+    color: white;
+    width: 100%;
+    padding-bottom: 3%;
+}
+.copyright{
+    text-align: center;
+}
+.foo{
+    display: flex;
+}
+.foo div{
+    margin-top: 3%;
+    height: 100%;
+    width: 35%;
+    margin-left: 2%;
+}
+.foo div h3{
+    margin-bottom: 5%;
+}
+.foo div p{
+    margin-bottom: 2%;
+}
+.foo svg{
+    padding-right: 5%;
+}
