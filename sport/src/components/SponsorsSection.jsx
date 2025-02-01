@@ -8,12 +8,12 @@ import sponsor5 from "../assets/sponsor5.jpg"
 import sponsor6 from "../assets/sponsor6.jpg"
 
 const sponsors = [
-  { name: "Sponsor 1", image: sponsor1},
-  { name: "Sponsor 2", image: sponsor2},
-  { name: "Sponsor 3", image: sponsor3},
-  { name: "Sponsor 4", image: sponsor4},
-  { name: "Sponsor 5", image: sponsor5},
-  { name: "Sponsor 6", image: sponsor6},
+  { name: "Impossible is Nothing", image: sponsor1},
+  { name: "Forever Faster", image: sponsor2},
+  { name: "Gives You Wings", image: sponsor3},
+  { name: "Driving Progress", image: sponsor4},
+  { name: "Just Do It", image: sponsor5},
+  { name: "Refreshing Moments", image: sponsor6},
 ];
 
 const SponsorsSection = () => {
