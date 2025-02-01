@@ -4,7 +4,6 @@ import Hero from "./components/Hero"
 import ProductCarousel from "./components/ProductCarousel"
 
 import React, { useState } from "react";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
 import contacts from "./contacts";
 import SponsorsSection from "./components/SponsorsSection";
@@ -18,19 +17,20 @@ function App() {
   return (
     <>
 
+      <div style={{backgroundColor: "#0f0f0f", margin : "0px" , padding : "0px"}} >
+          <Navbar/>
+          <Bg/>
+      </div>
     <Hero/>
     <BentoGrid/>
     <ProductCarousel/>
 
-    <div>
+    <div style={{backgroundColor: "#0f0f0f"}}>
       <SponsorsSection
       />
-      <Footer />
+      <Footer style={{backgroundColor: "#0f0f0f"}} />
     </div>
-      <div>
-          <Navbar/>
-          <Bg/>
-      </div>
+      
 
     </>
   )
