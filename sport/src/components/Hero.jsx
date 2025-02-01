@@ -9,10 +9,15 @@ function Hero() {
           <div className="leftPanel">
               <div>
               <h3>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo nulla, sed dolor reiciendis nobis, labore culpa vel provident vitae quisquam eligendi quod placeat numquam rerum facere ducimus id voluptas distinctio?
+              Are you passionate about sports? Whether you’re a player, a coach, a researcher, or just a die-hard fan, our Sports Community is the perfect place for you!
+ Connect with fellow sports enthusiasts worldwide. Share your experiences, insights, and strategies. Discuss match analyses, player stats, and sports science. Compete in challenges and showcase your skills.
+
+Join us in building a vibrant hub for sports lovers. Let’s grow, learn, and celebrate sports together! 
+
+What sports are you passionate about? Let’s get the conversation started!
                   </h3>
                   <div style={{ display: 'flex', gap: "2rem" }}>
-                    <h3>Left</h3>
+                    <h3></h3>
                   </div>
               </div>
           </div>
