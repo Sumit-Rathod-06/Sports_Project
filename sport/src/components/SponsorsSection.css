@@ -1,0 +1,59 @@
+.sponsors-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+.sponsors-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sponsors-scrolling-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.sponsors-track {
+  display: flex;
+  gap: 20px;
+  width: calc(150px * 6 * 2); /* Card width * Number of sponsors * 2 */
+  animation: scrollLeft 10s linear infinite;
+}
+
+.sponsor-card {
+  display: inline-block;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.sponsor-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.sponsor-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Infinite scrolling animation */
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%); /* Moves the track left seamlessly */
+  }
+}
