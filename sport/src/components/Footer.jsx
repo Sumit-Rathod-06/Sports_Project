@@ -6,9 +6,8 @@ function Footer() {
     <footer>
     <div class="foo">
         <div >
-            <h3>CareerCompass</h3>
-            <p>Guiding you towards nothing this is just some blah bleh bleh asdfasdf 
-                sdfasdfsd sd fasdf asd fasd 
+            <h3>SportSphere</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In quis modi non velit tempore, cupiditate rerum. Sed, pariatur aliquam eius
             </p>
         </div>
         <div >
